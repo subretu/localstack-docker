@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  localstack:
+    container_name: localstack
+    image: localstack/localstack:latest
+    ports:
+      - "8080:8080"
+      - "4566:4566"
+    volumes:
+      - ./localstack:/tmp/localstack
+      - "/var/run/docker.sock:/var/run/docker.sock"
+    environment:
+      - SERVICES=lambda
+      - DEFAULT_REGION=ap-northeast-1
+      - LAMBDA_DOCKER_NETWORK=host
+      - LAMBDA_EXECUTOR=docker                     # docker-reuseではうまくいかなった
+      - DOCKER_HOST=unix:///var/run/docker.sock
