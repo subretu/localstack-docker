@@ -14,5 +14,6 @@ services:
       - SERVICES=lambda
       - DEFAULT_REGION=ap-northeast-1
       - LAMBDA_DOCKER_NETWORK=host
-      - LAMBDA_EXECUTOR=docker                     # docker-reuseではうまくいかなった
+      # docker-reuseではうまくいかなった
+      - LAMBDA_EXECUTOR=docker
       - DOCKER_HOST=unix:///var/run/docker.sock
