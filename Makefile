@@ -17,7 +17,7 @@ list:
 	aws lambda list-functions \
 	--endpoint-url=http://localhost:4566
 
- delete:
+delete:
 	aws lambda delete-function \
 	--endpoint-url=http://localhost:4566 \
 	--function-name hello_lambda
