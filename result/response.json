@@ -1,1 +1,1 @@
-{"body":"{\"name\": \"subretu\"}","statusCode":200}
+{"errorMessage":"Unable to import module 'lambda_function': No module named 'psycopg2._psycopg'","errorType":"Runtime.ImportModuleError"}
