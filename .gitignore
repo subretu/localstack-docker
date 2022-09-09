@@ -1,1 +1,3 @@
-/deploy-packages
+/deploy-packages/
+/tmp/
+/upload/package/
