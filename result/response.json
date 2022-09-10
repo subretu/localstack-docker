@@ -1,1 +1,1 @@
-{"errorMessage":"module 'psycopg2' has no attribute 'psycopg2'","errorType":"AttributeError","stackTrace":["  File \"/var/task/lambda_function.py\", line 29, in lambda_handler\n    with connection() as conn:\n","  File \"/var/task/lambda_function.py\", line 13, in connection\n    conn = psycopg2.psycopg2-3.9.connect(\n"]}
+{"body":"[1, \"taro\"]","statusCode":200}
