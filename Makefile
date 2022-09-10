@@ -1,6 +1,6 @@
 clean:
-	rm -rf ./tmp/*
-	rm -rf ./upload/package/*
+	find ./tmp/ -type f | grep -v -E '.gitignore' | xargs rm -rf ./tmp/*
+	find ./upload/package/ -type f | grep -v -E '.gitignore' | xargs rm -rf ./upload/package/*
 
 zip:
 	cd ./tmp && git clone https://github.com/jkehler/awslambda-psycopg2.git
